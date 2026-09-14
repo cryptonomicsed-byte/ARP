@@ -1,0 +1,27 @@
+[manifest]
+repo       = "ARP"
+role       = "action-receipt-protocol"
+version    = "0.1.0"
+security   = "high"
+port       = null
+
+[protocol]
+kind       = "receipt-envelope"
+
+[receipt_kinds]
+kinds = ["compute", "vcp_session", "emission", "twin_capture", "twin_scene",
+         "simulation", "governance", "economic", "agent_lifecycle",
+         "witness", "mesh_event", "custom"]
+
+[chain]
+primitives = ["principal", "capability", "action", "evidence", "receipt"]
+hash       = "sha256"
+linkage    = "previous_hash"
+
+[events]
+emits    = []
+consumes = []
+
+[dependencies]
+required  = []
+optional  = ["*"]
