@@ -122,6 +122,7 @@ mod tests {
             execution_id: None,
             previous_hash: None,
             signature: "mocksig".into(),
+            gix1_canonical_id: None,
         }
     }
 

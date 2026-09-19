@@ -50,6 +50,11 @@ pub struct ActionReceipt {
     // ── auth ──────────────────────────────────────────────────────────────────
     /// Ed25519 signature by principal.agent_id over canonical JSON.
     pub signature:       String,
+
+    /// GIX1 canonical_id (hex) stamped by ArpBridge on ingest.
+    /// `GixNamespace::ArpReceipt` — makes every action receipt GIX-addressable.
+    #[serde(default)]
+    pub gix1_canonical_id: Option<String>,
 }
 
 impl ActionReceipt {
