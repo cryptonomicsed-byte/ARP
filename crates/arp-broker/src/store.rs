@@ -4,6 +4,7 @@ use std::collections::HashMap;
 use std::sync::RwLock;
 
 use arp_types::{ActionReceipt, ArpBridge};
+use crate::signing::sign_receipt;
 
 #[derive(Debug, Clone)]
 pub enum ChainResult {

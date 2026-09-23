@@ -10,4 +10,5 @@
 //!   GET  /health                     — liveness probe
 
 pub mod store;
+pub mod signing;
 pub use store::{ReceiptStore, ChainResult};
